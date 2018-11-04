@@ -23,3 +23,6 @@
 - 集成mybatis
 - 集成mybatis-generator，快速上手数据库业务开发
 - 集成rabbitmq，将消息处理从业务应用中解耦
+
+#联系我
+![](https://github.com/backkoms/backkoms.github.io/raw/master/qrcode_for_gh_28fb95c9c24c_258.jpg?raw=true)
