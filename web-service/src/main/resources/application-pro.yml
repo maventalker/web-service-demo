@@ -1,0 +1,45 @@
+server:
+  session-timeout: 1800
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/web-demo?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    initialSize: 1
+    minIdle: 3
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,slf4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10000
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 10
+        max-active: 100
+        max-wait: -1
+#dubbo config
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181

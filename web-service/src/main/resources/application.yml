@@ -1,0 +1,39 @@
+server:
+  session-timeout: 1800
+  port: 8083
+  
+spring:
+  profiles: 
+    active: dev
+  application:
+    name:fenbei-service
+    
+#service version config
+service:
+  version: 1.0.0
+  
+#dubbo config
+dubbo:
+  application:
+    id: web-service-provider
+    name: web-service-provider
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20882
+    status: server
+  provider:
+    timeout: 2000
+
+#mybatis configuration
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: com.growithus.**.bean
+  
+  
+rabbitmq:
+  queue:
+    sms: demo.sms.queue
+    push: demo.app.push.queue
