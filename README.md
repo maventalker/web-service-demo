@@ -25,4 +25,4 @@
 - 集成rabbitmq，将消息处理从业务应用中解耦
 
 #联系我
-![](https://github.com/backkoms/backkoms.github.io/raw/master/qrcode_for_gh_28fb95c9c24c_258.jpg?raw=true)
+![](src/site/qrcode_for_gh_28fb95c9c24c_258.jpg)
