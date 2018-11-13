@@ -9,13 +9,13 @@
 项目定位：
 >用于从大单体应用中解耦，实施前后端分离部署、分层部署、分服务部署，可使用独立数据库，应用redis缓存，发送MQ消息
 
-###基础依赖
+### 基础依赖
 - JDK 8+
 - Zookeeper
 - Redis
 - Rabbitmq
 
-###技术组件：
+### 技术组件：
 - Spring Boot 2.0.4.RELEASE
 - Swagger 2.6.1
 - Dubbo-spring-boot-starter 0.2.0
@@ -24,7 +24,7 @@
 - Spring-boot-starter-amqp
 - Lombok
 
-###提供功能：
+### 提供功能：
 - 基于profiles提供的多环境打包构建
 - 集成Log4j日志服务
 - 集成redis，提供缓存
@@ -41,7 +41,7 @@ https://gitee.com/Kristening/web-api-demo
 基于SpringBoot2和Swagger的WEB API框架，面向移动端（手机App，公众号，小程序.....）提供的API服务脚手架开发框架。
 
 
-#联系我
+# 联系我
 
 ![](src/site/qrcode_for_gh_28fb95c9c24c_258.jpg)
 
