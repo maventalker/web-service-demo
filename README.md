@@ -29,7 +29,8 @@
 - 集成Log4j日志服务
 - 集成redis，提供缓存
 - 集成mybatis
-- 集成mybatis-generator，快速上手数据库业务开发
+- 集成mybatis-generator，快速上手数据库业务开发。
+		https://github.com/backkoms/mybatis-generator-comments须本地构建后引入才能使用，使用方法：在项目包中运行命令mvn mybatis-generator:generate
 - 集成rabbitmq，将消息处理从业务应用中解耦
 - 集成Docker构建插件，可打包成Docker镜像运行
 - 集成lombok，简化实体的编写
