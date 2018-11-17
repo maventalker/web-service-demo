@@ -1,5 +1,7 @@
 package com.growithus.service.demo.service.channel;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.alibaba.dubbo.config.annotation.Service;
 import com.growithus.service.demo.ifc.channel.DemoService;
 
@@ -12,6 +14,7 @@ public class DemoServiceImpl implements DemoService {
 	 * @see
 	 * com.growithus.service.demo.ifc.channel.DemoService#hello(java.lang.String)
 	 */
+	@Transactional
 	public String hello(String input) {
 		return "hello " + input + ", spring boot dubbo!";
 	}
