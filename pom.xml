@@ -7,5 +7,6 @@
   <modules>
   	<module>web-service-i</module>
   	<module>web-service</module>
+  	<module>web-service2</module>
   </modules>
 </project>
